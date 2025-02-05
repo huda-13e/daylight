@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valentine's day card</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+
+        body {
+            font-family: 'im fell dw pica', serif;
+            background-color: #f8e1e8; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://www.transparenttextures.com/patterns/pw-maze.png');
+            background-size: 100px 100px;
+            overflow: hidden;
+        }
+       
+        .card {
+            background-color: #f9e0f1; 
+            border-radius: 20px;
+            padding: 50px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: card-appear 1.5s ease-out forwards;
+        }
+        @keyframes card-appear {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .heart {
+            color: #ff66b2; 
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: beat 2s infinite;
+        }        
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+        h1 {
+            color: #ff66b2; 
+            font-size: 36px;
+            margin: 0;
+            padding-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #444;
+            font-size: 18px;
+            font-style: italic;
+            padding-bottom: 25px;
+            font-family: 'georgia', serif;
+            margin: 20px 0;
+        }
+
+        .quote {
+            font-size: 16px;
+            color: #ff66b2;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff66b2;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #ff80c2;
+        }
+
+       
+        .taylor-swift {
+            font-size: 22px;
+            color: #ff3366;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #333;
+            margin-top: 15px;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">💗</div>
+        <h1>will you be my valentine?</h1>
+        <p>people say a blackhole holds the strongest gravitional pull, which highly makes me doubt they haven't seen your eyes. ek baar dekh kar sach main kho jaati hun apki aankhon main.</p>
+        
+        <a href="page-two.html" class="button">yes</a>
+
+    
+    </div>
+
+</body>    
+</html>
